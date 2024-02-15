@@ -21,20 +21,38 @@ main {
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "merriweather";
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff2") format("woff2");
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "jost";
+  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* TEKST START*/
 h1 {
   color: #24321e;
   font-size: 2rem;
+  font-family: "merriweather";
 }
 
 h2 {
   color: #24321e;
   font-size: 1.5rem;
+  font-family: "merriweather";
 }
 
 p {
   color: #24321e;
   font-size: 1rem;
+  font-family: "jost";
 }
 
 a {

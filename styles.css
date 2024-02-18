@@ -66,3 +66,97 @@ a:hover {
 
 @media (min-width: 800px) {
 }
+
+/*------ MUSHROOM LIST ------*/
+
+#mushroomlist_img {
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+#mushrooms_intro {
+  padding: 2rem;
+}
+#mushrooms_intro p {
+  max-width: 65ch;
+  margin: auto;
+  line-height: 1.5rem;
+}
+#mushrooms_intro h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#mushrooms_intro p {
+  margin-bottom: 2rem;
+}
+
+#pick_month {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#months {
+  font-family: "jost";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.one_month {
+  background-color: #24321e;
+  padding: 0.5rem;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+#month_header {
+  padding: 2rem;
+}
+
+.mushroom_card {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+}
+
+.mushroom_card img {
+  grid-column: 2/3;
+}
+
+.mushcard_txtbox {
+  background-color: #24321e;
+  grid-column: 1/4;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.mushcard_txtbox h2 {
+  color: #f2f2f2;
+}
+.mushcard_txtbox p {
+  color: #f2f2f2;
+  font-style: italic;
+}
+
+.mushcard_txtbox a {
+  background-color: #f2f2f2;
+  padding: 0.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #months {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 800px;
+  }
+}

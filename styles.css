@@ -104,6 +104,9 @@ a:hover {
   gap: 20px;
   text-transform: uppercase;
 }
+.all_months {
+  grid-column: 2/3;
+}
 
 .one_month {
   background-color: #24321e;
@@ -149,7 +152,53 @@ a:hover {
   text-decoration: none;
 }
 
+/*----- MUSHROOM SINGLE VIEW -------*/
+.mushroom_sv {
+  padding: 2rem;
+}
+
+.mushroom_sv img {
+  margin: 0 0 2rem 0;
+}
+
+.mushroom_sv h1,
+.mushroom_sv p {
+  background-color: #a7bf95;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mushroom_sv a {
+  background-color: #a7bf95;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "jost";
+  display: block;
+  text-align: center;
+}
+
+.mushroom_sv a:hover {
+  color: #f2f2f2;
+}
+
+.list_style {
+  background-color: #24321e;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  margin-right: 1rem;
+}
+
+.mushroom_fax li {
+  display: flex;
+  margin-bottom: 1rem;
+  font-family: "jost";
+}
+
 @media (min-width: 800px) {
+  /*----- MUSHROOM LIST ------*/
+
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -158,5 +207,31 @@ a:hover {
   #months {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 800px;
+  }
+  .all_months {
+    grid-column: 2/4;
+  }
+  /*----- MUSHROOM SINGLE VIEW -------*/
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 2fr;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .mush_image {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .description {
+    grid-column: 1/2;
+    grid-row: 2/5;
   }
 }

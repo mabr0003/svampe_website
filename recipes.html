@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-
     <link rel="icon" href="logo/logo.webp" type="image/x-icon" />
     <link rel="shortcut icon" href="logo/logo.webp" type="image/x-icon" />
-
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="recipe.css" />
 
     <title>Recipes</title>
   </head>
 
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html">
-          <img src="" alt="Logo" />
-        </a>
-      </div>
       <nav>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="mushrooms.html">Mushrooms</a></li>
+          <li>
+            <div class="logo">
+              <a class="logo" href="index.html">
+                <img src="./Img/Logo.svg" alt="Logo" />
+              </a>
+            </div>
+          </li>
           <li><a href="foraging.html">Foraging</a></li>
           <li><a href="recipes.html">Recipes</a></li>
         </ul>
@@ -36,7 +37,70 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>Stir-fried fresh chanterelles with soy sauce and ginger</h1>
+      <article class="recipe_cooking_icons_container">
+        <figure>
+          <img class="recipe-single-view-icon" src="./Img/season.svg" alt="" />
+          <figcaption>Month</figcaption>
+        </figure>
+        <figure>
+          <img class="recipe-single-view-icon" src="./Img/timer.svg" alt="" />
+          <figcaption>Time</figcaption>
+        </figure>
+        <figure>
+          <img class="recipe-single-view-icon" src="./Img/level.svg" alt="" />
+          <figcaption>Level</figcaption>
+        </figure>
+        <figure>
+          <img class="recipe-single-view-icon" src="./Img/user.svg" alt="" />
+          <figcaption>Person</figcaption>
+        </figure>
+      </article>
+      <figure class="single-view-recipe-tile">
+        <img class="single-view-recipe-image" src="" alt="billedet af madet" />
+      </figure>
+      <article class="recipe_container_instructions">
+        <section class="recipe-subgrid-instructions">
+          <h2>Ingridients</h2>
+          <ul>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+            <li>sdfsdf</li>
+          </ul>
+        </section>
+        <section class="recipe-subgrid-instructions">
+          <h2>Directions</h2>
+          <ol>
+            <li>
+              <input type="checkbox" id="direction" name="direction" />
+              <label for="direction">Direction</label>
+            </li>
+            <li>
+              <input type="checkbox" id="direction" name="direction" />
+              <label for="direction">Direction</label>
+            </li>
+            <li>
+              <input type="checkbox" id="direction" name="direction" />
+              <label for="direction">Direction</label>
+            </li>
+            <li>
+              <input type="checkbox" id="direction" name="direction" />
+              <label for="direction">Direction</label>
+            </li>
+            <li>
+              <input type="checkbox" id="direction" name="direction" />
+              <label for="direction">Direction</label>
+            </li>
+          </ol>
+        </section>
+      </article>
+    </main>
 
     <footer></footer>
     <script src=""></script>

@@ -64,5 +64,52 @@ a:hover {
   color: #a7bf95;
 }
 
+/* Frontpage */
+.frontpage_join {
+  background-color: #a7bf95;
+  padding: 6rem;
+}
+
+.frontpage_join h1 {
+  color: #f2f2f2;
+}
+
+.frontpage_mushrooms {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.frontpage_mushrooms h2 {
+  color: #f2f2f2;
+}
+
+.div_foraging {
+  background-color: #214827;
+  padding: 4rem;
+}
+
+.div_recipes {
+  background-color: #b5b4b4;
+  padding: 4rem;
+}
+
+.frontpage_foraging {
+  background-color: #4ebf7f;
+  padding: 4rem;
+}
+
+.frontpage_foraging h1 {
+  color: #f2f2f2;
+}
+/* Mushrooms */
+
+/* Foraging */
+
+/* Recipes */
+
+/* Mushroomlist */
+
+/* Recipelist */
+
 @media (min-width: 800px) {
 }

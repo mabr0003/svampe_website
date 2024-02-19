@@ -17,8 +17,12 @@ body {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -66,12 +70,50 @@ a:hover {
 
 /* Frontpage */
 .frontpage_join {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
   background-color: #a7bf95;
-  padding: 6rem;
+  padding: 5rem;
 }
 
 .frontpage_join h1 {
   color: #f2f2f2;
+}
+
+.form-felt {
+  color: #f2f2f2;
+  margin-bottom: 2rem;
+}
+
+#navn,
+#email {
+  width: 300px;
+  height: 25px;
+}
+
+label {
+  display: block; /*starter normalt på en ny linje og strækker sig i bredden af deres container.*/
+  margin-bottom: 5px;
+}
+
+.kontaktform {
+  display: flex;
+  flex-direction: column; /* Dette angiver, at 1st child elementerne af .kontaktform skal placeres i en lodret kolonne.*/
+  align-items: center; /*Dette centrerer elementerne langs tværs af den vandrette akse*/
+  justify-content: center; /*Dette centrerer elementerne langs tværs af den lodrette akse*/
+}
+.send_knap {
+  background-color: #08a64d;
+  color: #f2f2f2;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase; /*tekst til store bogstaver*/
+}
+.send_knap:hover {
+  color: #a7bf95;
 }
 
 .frontpage_mushrooms {
@@ -85,7 +127,7 @@ a:hover {
 
 .div_foraging {
   background-color: #214827;
-  padding: 4rem;
+  padding: 5rem;
 }
 
 .div_recipes {
@@ -101,6 +143,26 @@ a:hover {
 .frontpage_foraging h1 {
   color: #f2f2f2;
 }
+
+.frontpage_follow {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.frontpage_follow h2 {
+  color: #f2f2f2;
+}
+
+.frontpage_icons {
+  background-color: #a7bf95;
+  padding: 4rem;
+}
+
+.frontpage_follow_us {
+  background-color: #214827;
+  padding: 4rem;
+}
+
 /* Mushrooms */
 
 /* Foraging */

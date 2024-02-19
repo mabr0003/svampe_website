@@ -38,24 +38,58 @@
         </nav>
     </header>
     <main>
+        <div class="video_container">
+            <video autoplay muted loop>
+                <source src="nicolinemarott.dk/kea/07_web/hero_video.mp4" type=" video/mp4">
+            </video>
+        </div>
         <article class="frontpage_join">
             <h1>JOIN OUR NEWSPAPER</h1>
+            <div>
+                <form class="kontaktform">
+                    <!-- Formular-indhold -->
+                    <div class="form-felt">
+                        <label for="navn">NAME </label>
+                        <input type="text" id="navn">
+                    </div>
+
+                    <div class="form-felt">
+                        <label for="navn">EMAIL </label>
+                        <input type="text" id="email">
+                    </div>
+                    <button class="send_knap">JOIN</button>
+                </form>
+            </div>
         </article>
 
         <article class="frontpage_mushrooms">
-            <div class="div_foraging">
-                <h2>FORAGING DIFFERENT MUSHROOMS</h2>
-            </div>
-
+            <a href="mushrooms.html">
+                <div class="div_foraging">
+                    <h2>FORAGING DIFFERENT MUSHROOMS</h2>
+                </div>
+            </a>
             <div class="div_recipes">
-                <h2>RECIPES INSPIRATION</h2>
+                <a href="recipes.html">
+                    <h2>RECIPES INSPIRATION</h2>
+                </a>
             </div>
         </article>
 
         <article class="frontpage_foraging">
-            <h1>WHAT ABOUT FORAGING?</h1>
+            <a href="foraging.html">
+                <h1>WHAT ABOUT FORAGING?</h1>
+            </a>
         </article>
 
+        <article class="frontpage_follow">
+            <div class="frontpage_icons">
+                <H2>ICONS</H2>
+            </div>
+
+            <div class="frontpage_follow_us">
+                <h2>GO FOLLOW US ON</h2>
+            </div>
+        </article>
     </main>
 
     <footer>

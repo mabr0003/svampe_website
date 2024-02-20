@@ -9,6 +9,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 body {
@@ -136,33 +137,100 @@ label {
 }
 
 .frontpage_foraging {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   background-color: #4ebf7f;
   padding: 4rem;
+}
+
+.frontpage_foraging img {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  margin: auto;
+}
+
+.frontpage_foraging_link {
+  margin: auto;
+  text-align: center;
+  grid-row: 2/3;
+}
+.read_more_frontpage {
+  background-color: #f2f2f2;
+  display: inline;
+  padding: 0.3rem;
+  border-radius: 5px;
 }
 
 .frontpage_foraging h1 {
   color: #f2f2f2;
 }
 
+.frontpage_foraging img {
+  width: 30%;
+  height: auto;
+}
 .frontpage_follow {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 1fr 2fr;
+
+  overflow: hidden;
+}
+.frotpage_visit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.facebook {
+  width: 20%;
+  margin: auto;
+}
+
+.instagram {
+  width: 42%;
+  margin: auto;
 }
 
 .frontpage_follow h2 {
   color: #f2f2f2;
 }
 
-.frontpage_icons {
-  background-color: #a7bf95;
-  padding: 4rem;
-}
-
 .frontpage_follow_us {
-  background-color: #214827;
-  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+  max-height: 40vh;
 }
 
+.forrest {
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1/5;
+  grid-row: 1/6;
+}
+.arrow {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 25%;
+  margin: auto;
+}
+
+.frontpage_follow_us h2 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  z-index: 1000;
+  text-align: center;
+  justify-content: center;
+}
+
+.frotpage_visit {
+  background-color: #a7bf95;
+}
+.video_container {
+  height: 90vh;
+  overflow: hidden;
+}
+video {
+  object-fit: cover;
+}
 /* Mushrooms */
 
 /* Foraging */

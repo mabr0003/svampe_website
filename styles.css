@@ -111,6 +111,7 @@ footer .kontaktform {
   footer .kontaktform {
     padding-left: 200px;
     background-color: #24321e;
+    padding-top: 20px;
   }
   footer .form-felt {
     color: #f2f2f2;
@@ -120,5 +121,23 @@ footer .kontaktform {
   footer #email {
     width: 300px;
     height: 25px;
+  }
+  footer label {
+    padding-right: 30px;
+    font-family: "merriweather";
+  }
+  footer .send_knap {
+    background-color: #08a64d;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150px;
+    text-transform: uppercase; /*tekst til store bogstaver*/
+  }
+  footer .send_knap:hover {
+    color: #a7bf95;
   }
 }

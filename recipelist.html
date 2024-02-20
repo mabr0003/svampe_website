@@ -38,7 +38,8 @@
       </nav>
     </header>
     <main class="recipe_list_container">
-      <a href="recipes.html">
+    <!--
+     <a href="recipes.html">
         <article class="recipelist-card_container">
             <figure>
                 <img class="recipe-image" src="./Img/Unavngivet(1).png" alt="" />
@@ -136,36 +137,37 @@
             </section>
           </div>
         </article>
-      </a>
-
-      <a href="recipes.html">
-        <article class="recipelist-card_container">
-          <figure>
-            <img class="recipe-image" src="./Img/Unavngivet(1).png" alt="" />
-          </figure>
-          <div class="description-container">
-            <h2 class="recipe-title">NAME OF THE RECIPE</h2>
-            <section class="card_icons">
+      </a> -->
+      <template>
+          <a href="recipes.html" class="read-more">
+            <article class="recipelist-card_container">
               <figure>
-                <img class="recipe-view-icon" src="./Img/season.svg" alt="" />
-                <figcaption>Month</figcaption>
+                <img class="recipe-image" src="./Img/Unavngivet(1).png" alt="" />
               </figure>
-              <figure>
-                <img class="recipe-view-icon" src="./Img/timer.svg" alt="" />
-                <figcaption>Time</figcaption>
-              </figure>
-              <figure>
-                <img class="recipe-view-icon" src="./Img/level.svg" alt="" />
-                <figcaption>Level</figcaption>
-              </figure>
-            </section>
-          </div>
-        </article>
-      </a>
+              <div class="description-container">
+                <h2 class="recipe-title">NAME OF THE RECIPE</h2>
+                <section class="card_icons">
+                  <figure>
+                    <img class="recipe-view-icon" src="./Img/season.svg" alt="" />
+                    <figcaption>Month</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="recipe-view-icon" src="./Img/timer.svg" alt="" />
+                    <figcaption class="time">Time</figcaption>
+                  </figure>
+                  <figure>
+                    <img class="recipe-view-icon" src="./Img/level.svg" alt="" />
+                    <figcaption class="level">Level</figcaption>
+                  </figure>
+                </section>
+              </div>
+            </article>
+          </a>
+      </template>
     </main>
 
     <footer></footer>
-
+    <script src="recipelist.js"></script>
     <script src="menu.js"></script>
   </body>
 </html>

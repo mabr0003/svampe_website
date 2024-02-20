@@ -69,34 +69,34 @@ a:hover {
 
 /*------ MUSHROOM LIST ------*/
 
-#mushroomlist_img {
+.mushroomlist_img {
   aspect-ratio: 16/9;
   max-height: 70vh;
   object-fit: cover;
 }
 
-#mushrooms_intro {
+.mushrooms_intro {
   padding: 2rem;
 }
-#mushrooms_intro p {
+.mushrooms_intro p {
   max-width: 65ch;
   margin: auto;
   line-height: 1.5rem;
 }
-#mushrooms_intro h1 {
+.mushrooms_intro h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
-#mushrooms_intro p {
+.mushrooms_intro p {
   margin-bottom: 2rem;
 }
 
-#pick_month {
+.pick_month {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-#months {
+.months {
   font-family: "jost";
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -204,7 +204,7 @@ a:hover {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  #months {
+  .months {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 800px;
   }

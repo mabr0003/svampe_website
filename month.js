@@ -23,7 +23,7 @@ function showAllMushrooms(mushroom) {
   clone.querySelector(".mushcard_txtbox h2").textContent = mushroom.name;
   clone.querySelector(".mushcard_txtbox p").textContent = mushroom.landscapes;
 
-  document.querySelector("#month_header").textContent = season;
+  document.querySelector(".month_header").textContent = season;
 
   clone.querySelector(".read_more").setAttribute("href", `mushrooms.html?id=${mushroom.id}`);
 

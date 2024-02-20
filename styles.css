@@ -72,7 +72,7 @@ a:hover {
 footer {
   background-color: #a7bf95;
 }
-footer div {
+footer .grid {
   padding-bottom: 8%;
   background-color: #24321e;
 }
@@ -91,8 +91,8 @@ footer .kontaktform {
 }
 @media (min-width: 800px) {
   /*footer*/
-  footer div {
-    padding-bottom: 7%;
+  footer .grid {
+    padding-bottom: 4%;
   }
   footer .supertusch {
     height: 90px;
@@ -100,5 +100,25 @@ footer .kontaktform {
   footer .mad {
     height: 150px;
     padding-left: 6%;
+  }
+  footer .kontaktform {
+    display: block;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  footer .kontaktform {
+    padding-left: 200px;
+    background-color: #24321e;
+  }
+  footer .form-felt {
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+  }
+  footer #navn,
+  footer #email {
+    width: 300px;
+    height: 25px;
   }
 }

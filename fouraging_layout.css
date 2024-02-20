@@ -1,0 +1,12 @@
+@media (min-width: 800px) {
+  .fouraging {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 70px;
+  }
+  .fouraging :last-child {
+    grid-template: 1/2;
+    grid-row: 2/3;
+  }
+}

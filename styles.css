@@ -13,7 +13,7 @@ img {
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #eef6d885;
   list-style: none;
 }
 
@@ -285,8 +285,92 @@ video {
 /* Mushroomlist */
 
 /* Recipelist */
+/*footer*/
 
+footer {
+  background-color: #a7bf95;
+}
+footer .grid {
+  padding-bottom: 8%;
+  background-color: #24321e;
+}
+footer .supertusch {
+  height: 50px;
+  width: auto;
+  padding-left: 4%;
+}
+footer .mad {
+  height: 110px;
+  width: auto;
+  padding-left: 5%;
+}
+footer .kontaktform {
+  display: none;
+}
 @media (min-width: 800px) {
+  /*footer*/
+  footer .grid {
+    padding-bottom: 4%;
+  }
+  footer .supertusch {
+    height: 90px;
+    padding-left: 8%;
+  }
+  footer .mad {
+    height: 150px;
+    padding-left: 12%;
+  }
+  footer .kontaktform {
+    display: block;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+  }
+  footer .kontaktform {
+    padding-left: 200px;
+    background-color: #24321e;
+    padding-top: 30px;
+  }
+  footer .form-felt {
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+  }
+  footer #name,
+  footer #email1 {
+    width: 300px;
+    height: 25px;
+  }
+  footer label {
+    padding-right: 30px;
+    font-family: "merriweather";
+  }
+  footer .send_knap {
+    background-color: #08a64d;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150px;
+    text-transform: uppercase; /*tekst til store bogstaver*/
+  }
+  footer .send_knap:hover {
+    color: #a7bf95;
+  }
+
+  footer .sociale_medier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -70px 60px 20px 70px;
+  }
+  footer .sociale_medier img {
+    height: 70px;
+    width: auto;
+    margin: 25px;
+  }
 }
 
 /*------ MUSHROOM LIST ------*/
@@ -297,9 +381,19 @@ video {
   object-fit: cover;
 }
 
+#mushroomlist {
+  background-color: #a7bf95;
+}
+
 #mushrooms_intro {
   padding: 2rem;
 }
+#mushrooms_intro img {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
 #mushrooms_intro p {
   max-width: 65ch;
   margin: auto;

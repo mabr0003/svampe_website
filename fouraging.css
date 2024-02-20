@@ -65,6 +65,7 @@ img {
   display: flex;
 }
 
+/*her laver jeg to rækker*/
 .fouraging .row {
   display: flex;
   flex-direction: column;

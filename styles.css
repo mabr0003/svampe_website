@@ -96,10 +96,11 @@ footer .kontaktform {
   }
   footer .supertusch {
     height: 90px;
+    padding-left: 8%;
   }
   footer .mad {
     height: 150px;
-    padding-left: 6%;
+    padding-left: 12%;
   }
   footer .kontaktform {
     display: block;

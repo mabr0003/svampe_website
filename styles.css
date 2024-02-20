@@ -67,6 +67,7 @@ a {
 a:hover {
   color: #a7bf95;
 }
+/*footer*/
 
 footer {
   background-color: #a7bf95;
@@ -85,8 +86,11 @@ footer .mad {
   width: auto;
   padding-left: 5%;
 }
-
+footer .kontaktform {
+  display: none;
+}
 @media (min-width: 800px) {
+  /*footer*/
   footer div {
     padding-bottom: 7%;
   }

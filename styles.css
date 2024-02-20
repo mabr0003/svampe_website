@@ -23,15 +23,19 @@ main {
 
 @font-face {
   font-family: "merriweather";
-  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff2") format("woff2");
-  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff") format("woff");
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff2")
+    format("woff2");
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "jost";
-  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff2") format("woff2");
-  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff") format("woff");
+  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff2")
+    format("woff2");
+  src: url("webfontkit-20240215-061302/jost-variablefont_wght-webfont.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -64,5 +68,33 @@ a:hover {
   color: #a7bf95;
 }
 
+footer {
+  background-color: #a7bf95;
+}
+footer div {
+  padding-bottom: 8%;
+  background-color: #24321e;
+}
+footer .supertusch {
+  height: 50px;
+  width: auto;
+  padding-left: 4%;
+}
+footer .mad {
+  height: 110px;
+  width: auto;
+  padding-left: 5%;
+}
+
 @media (min-width: 800px) {
+  footer div {
+    padding-bottom: 7%;
+  }
+  footer .supertusch {
+    height: 90px;
+  }
+  footer .mad {
+    height: 150px;
+    padding-left: 6%;
+  }
 }

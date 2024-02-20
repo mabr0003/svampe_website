@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@font-face {
+  font-family: "merriweather";
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff2")
+    format("woff2");
+  src: url("webfontkit-20240215-060831/merriweather-regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fouraging {
+  padding: 80px 40px 40px 40px;
+  background-color: #a7bf95;
+}
+
+.fouraging img {
+  padding-bottom: 60px;
+}
+.blad img {
+  padding-bottom: 30px;
+}
+.fouraging .tools_beskrivelse {
+  padding-bottom: 0px;
+}
+
+.fouraging .stort_billede {
+  padding: 0;
+}
+
+.overskrift {
+  padding: 40px 10px 70px 10px;
+  background-color: #eef6d885;
+}
+.fouraging h2 {
+  color: #24321e;
+  font-size: 30px;
+  font-family: "merriweather";
+  background-color: #eef6d8;
+  text-align: center;
+  padding: 10px;
+  border-radius: 35px;
+}
+
+.fouraging p {
+  font-size: 20px;
+  font-family: "merriweather";
+  padding-top: 40px;
+  line-height: 35px;
+  padding-bottom: 40px;
+}
+
+.fouraging .tools {
+  display: flex;
+}
+
+.fouraging .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fouraging .row {
+  padding: 3% 10% 0 0;
+}
+.fouraging .blad p {
+  font-size: 20px;
+  font-family: "merriweather";
+}
+
+.tools p {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main_fouraging {
+  max-width: 2000px;
+}
+.blad img {
+  max-height: 50px;
+  width: auto;
+  padding-right: 10px;
+}
+
+.blad {
+  display: flex;
+}
+
+@media (min-width: 800px) {
+  .stort_billede {
+    max-height: 700px;
+    object-fit: cover;
+  }
+  .overskrift {
+    padding: 5% 25% 5% 25%;
+  }
+  .fouraging h2 {
+    font-size: 40px;
+  }
+  .fouraging {
+    padding: 5% 10% 5% 10%;
+  }
+  .fouraging p {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .tools p {
+    padding-top: 0;
+    line-height: 30px;
+  }
+
+  .fouraging img {
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" href="logo/logo.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="logo/logo.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <title>Ingredients</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Img/Logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mushroomlist.html">Mushrooms</a></li>
+                <li><a href="foraging.html">Foraging</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <img id="mushroomlist_img" src="Img/mushroomlist.webp" alt="mushroom">
+
+    <main>
+        <section id="mushrooms_intro">
+            <h1>MUSHROOMS</h1>
+            <p>There are many different types of mushroom, each with their own unique look. However, most mushrooms are
+                identifiable by
+                their stem and cap. Under the cap are either gills or pores. Pores are small holes, and gills look like
+                strings going
+                from the outer rim of the cap to the stem. Generally, mushrooms with pores under their caps (boletaceae)
+                are edible and
+                tasty, and there is virtually no risk in picking and eating them. You need to be more careful with
+                gilled mushrooms:
+                they can be delicious, but a lot of them have a foul taste, and some are poisonous. Many other mushrooms
+                don't look like
+                mushrooms at all, but can be eaten—if you know how to handle them.</p>
+            <!-- paragrah taget fra VildMad hjememside -->
+
+
+            <h2 id="pick_month">Pick your month of foraging</h2>
+            <div id="months">
+                <a class="one_month january" href="month.html?season=January#mushroomlist">January</a>
+                <a class="one_month february" href="month.html?season=February#mushroomlist">february</a>
+                <a class="one_month march" href="month.html?season=March#mushroomlist">march</a>
+                <a class="one_month april" href="month.html?season=April#mushroomlist">april</a>
+                <a class="one_month may" href="month.html?season=May#mushroomlist">may</a>
+                <a class="one_month june" href="month.html?season=June#mushroomlist">june</a>
+                <a class="one_month july" href="month.html?season=July#mushroomlist">july</a>
+                <a class="one_month august" href="month.html?season=August#mushroomlist">august</a>
+                <a class="one_month september" href="month.html?season=September#mushroomlist">september</a>
+                <a class="one_month october" href="month.html?season=October#mushroomlist">october</a>
+                <a class="one_month november" href="month.html?season=November#mushroomlist">november</a>
+                <a class="one_month december" href="month.html?season=December#mushroomlist">december</a>
+                <a class="one_month all_months" href="mushroomlist.html#mushroomlist">All</a>
+
+            </div>
+
+
+        </section>
+
+        <section id="mushroomlist">
+            <h2 id="month_header">JULY</h2>
+            <article class="grid_1-1-1">
+
+            </article>
+
+        </section>
+        <template>
+            <article class="mushroom_card">
+                <img src="https://vildmadv2.vps.webdock.io/application/files/4916/2436/9432/Brunstokket-Rorhat_ravarekort_app.png"
+                    alt="mushroom">
+                <div class="mushcard_txtbox">
+                    <h2>Bay Bolette</h2>
+                    <p>Coniferous forest</p>
+                    <a class="read_more" href="mushrooms.html">Read more</a>
+                </div>
+            </article>
+        </template>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="month.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

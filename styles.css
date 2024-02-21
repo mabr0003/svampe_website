@@ -9,16 +9,21 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #eef6d885;
   list-style: none;
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 @font-face {
@@ -64,5 +69,485 @@ a:hover {
   color: #a7bf95;
 }
 
+/* Frontpage */
+.frontpage_join {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: #a7bf95;
+  padding: 5rem;
+}
+
+.frontpage_join h1 {
+  color: #f2f2f2;
+  margin: auto;
+}
+
+.form-felt {
+  color: #f2f2f2;
+  margin-bottom: 2rem;
+}
+
+#navn,
+#email {
+  width: 300px;
+  height: 25px;
+}
+
+label {
+  display: block; /*starter normalt på en ny linje og strækker sig i bredden af deres container.*/
+  margin-bottom: 5px;
+}
+
+.kontaktform {
+  display: flex;
+  flex-direction: column; /* Dette angiver, at 1st child elementerne af .kontaktform skal placeres i en lodret kolonne.*/
+  align-items: center; /*Dette centrerer elementerne langs tværs af den vandrette akse*/
+  justify-content: center; /*Dette centrerer elementerne langs tværs af den lodrette akse*/
+}
+.send_knap {
+  background-color: #08a64d;
+  color: #f2f2f2;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase; /*tekst til store bogstaver*/
+}
+.send_knap:hover {
+  color: #a7bf95;
+}
+
+.frontpage_mushrooms {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.frontpage_mushrooms img:hover {
+  filter: grayscale(1);
+  transition: 0.2s;
+}
+
+.frontpage_mushrooms h2 {
+  color: #f2f2f2;
+}
+
+.div_foraging {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+  height: 45vh;
+  overflow: hidden;
+}
+
+.div_foraging img {
+  grid-column: 1/5;
+  object-fit: cover;
+  grid-row: 1/5;
+}
+.div_foraging h2 {
+  grid-column: 1/5;
+  object-fit: cover;
+  grid-row: 3/4;
+  z-index: 1000;
+  margin: auto;
+}
+
+.div_recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+  height: 45vh;
+  overflow: hidden;
+}
+.div_recipes img {
+  grid-column: 1/5;
+  margin-top: -28rem;
+  grid-row: 1/5;
+}
+.div_recipes h2 {
+  grid-column: 1/5;
+  object-fit: cover;
+  grid-row: 3/4;
+  z-index: 1000;
+  margin: auto;
+}
+
+.frontpage_foraging {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #4ebf7f;
+  padding: 4rem;
+}
+
+.frontpage_foraging img {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  margin: auto;
+  width: 50%;
+  height: auto;
+}
+
+.frontpage_foraging_link {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: auto;
+  text-align: center;
+  grid-row: 2/3;
+  gap: 20px;
+}
+.frontpage_foraging_link:hover {
+  scale: 1.2;
+  transition: 0.5s;
+}
+.frontpage_foraging_link h1 {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.read_more_frontpage {
+  background-color: #f2f2f2;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.frontpage_foraging h1 {
+  color: #f2f2f2;
+}
+
+.frontpage_follow {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  overflow: hidden;
+}
+.frontpage_visit {
+  display: flex;
+  background-color: #a7bf95;
+}
+.facebook {
+  width: 8%;
+  margin: auto;
+  margin-left: 10rem;
+}
+
+.instagram {
+  width: 18%;
+  margin: auto;
+  margin-right: 10rem;
+}
+
+.frontpage_follow h2 {
+  color: #f2f2f2;
+}
+
+.frontpage_follow_us {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr 2fr 2fr;
+  max-height: 40vh;
+}
+
+.forrest {
+  height: 100%;
+  object-fit: cover;
+  grid-column: 1/5;
+  grid-row: 1/6;
+}
+.arrow {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 25%;
+  margin: auto;
+}
+
+.frontpage_follow_us h2 {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  z-index: 1000;
+  text-align: center;
+  justify-content: center;
+}
+
+.video_container {
+  height: 90vh;
+  overflow: hidden;
+}
+video {
+  object-fit: cover;
+}
+/* Mushrooms */
+
+/* Foraging */
+
+/* Recipes */
+
+/* Mushroomlist */
+
+/* Recipelist */
+/*footer*/
+
+footer {
+  background-color: #a7bf95;
+}
+footer .grid {
+  padding-bottom: 8%;
+  background-color: #24321e;
+}
+footer .supertusch {
+  height: 50px;
+  width: auto;
+  padding-left: 4%;
+}
+footer .mad {
+  height: 110px;
+  width: auto;
+  padding-left: 5%;
+}
+footer .kontaktform {
+  display: none;
+}
 @media (min-width: 800px) {
+  /*footer*/
+  footer .grid {
+    padding-bottom: 4%;
+  }
+  footer .supertusch {
+    height: 90px;
+    padding-left: 8%;
+  }
+  footer .mad {
+    height: 150px;
+    padding-left: 12%;
+  }
+  footer .kontaktform {
+    display: block;
+  }
+  footer .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+  }
+  footer .kontaktform {
+    padding-left: 200px;
+    background-color: #24321e;
+    padding-top: 30px;
+  }
+  footer .form-felt {
+    color: #f2f2f2;
+    margin-bottom: 2rem;
+  }
+  footer #name,
+  footer #email1 {
+    width: 300px;
+    height: 25px;
+  }
+  footer label {
+    padding-right: 30px;
+    font-family: "merriweather";
+  }
+  footer .send_knap {
+    background-color: #08a64d;
+    color: #f2f2f2;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 150px;
+    text-transform: uppercase; /*tekst til store bogstaver*/
+  }
+  footer .send_knap:hover {
+    color: #a7bf95;
+  }
+
+  footer .sociale_medier {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -70px 60px 20px 70px;
+  }
+  footer .sociale_medier img {
+    height: 70px;
+    width: auto;
+    margin: 25px;
+  }
+}
+
+/*------ MUSHROOM LIST ------*/
+
+#mushroomlist_img {
+  aspect-ratio: 16/9;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+#mushroomlist {
+  background-color: #a7bf95;
+}
+
+#mushrooms_intro {
+  padding: 2rem;
+}
+#mushrooms_intro img {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#mushrooms_intro p {
+  max-width: 65ch;
+  margin: auto;
+  line-height: 1.5rem;
+}
+#mushrooms_intro h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#mushrooms_intro p {
+  margin-bottom: 2rem;
+}
+
+#pick_month {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#months {
+  font-family: "jost";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  gap: 20px;
+  text-transform: uppercase;
+}
+.all_months {
+  grid-column: 2/3;
+}
+
+.one_month {
+  background-color: #24321e;
+  padding: 0.5rem;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+#month_header {
+  padding: 2rem;
+}
+
+.mushroom_card {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 20fr 1fr;
+}
+
+.mushroom_card img {
+  grid-column: 2/3;
+}
+
+.mushcard_txtbox {
+  background-color: #24321e;
+  grid-column: 1/4;
+  padding: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.mushcard_txtbox h2 {
+  color: #f2f2f2;
+}
+.mushcard_txtbox p {
+  color: #f2f2f2;
+  font-style: italic;
+}
+
+.mushcard_txtbox a {
+  background-color: #f2f2f2;
+  padding: 0.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/*----- MUSHROOM SINGLE VIEW -------*/
+.mushroom_sv {
+  padding: 2rem;
+}
+
+.mushroom_sv img {
+  margin: 0 0 2rem 0;
+}
+
+.mushroom_sv h1,
+.mushroom_sv p {
+  background-color: #a7bf95;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mushroom_sv a {
+  background-color: #a7bf95;
+  padding: 0.8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "jost";
+  display: block;
+  text-align: center;
+}
+
+.mushroom_sv a:hover {
+  color: #f2f2f2;
+}
+
+.list_style {
+  background-color: #24321e;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  margin-right: 1rem;
+}
+
+.mushroom_fax li {
+  display: flex;
+  margin-bottom: 1rem;
+  font-family: "jost";
+}
+
+@media (min-width: 800px) {
+  /*----- MUSHROOM LIST ------*/
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #months {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 800px;
+  }
+  .all_months {
+    grid-column: 2/4;
+  }
+  /*----- MUSHROOM SINGLE VIEW -------*/
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr 2fr;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .name {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .mush_image {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .description {
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
 }

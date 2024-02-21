@@ -28,7 +28,7 @@
             </div>
           </li>
           <li><a href="foraging.html">Foraging</a></li>
-          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="recipelist.html">Recipes</a></li>
         </ul>
         <div class="burger">
           <div class="line"></div>
@@ -58,43 +58,34 @@
         </figure>
       </article>
       <figure class="single-view-recipe-tile">
-        <img class="single-view-recipe-image" src="" alt="billedet af madet" />
+        <img
+          class="single-view-recipe-image"
+          src="Kommer fra js"
+          alt="billedet af madet"
+        />
       </figure>
-      <article class="recipe_container_instructions">
+      <article class="recipe_container_instructions grain_bg">
         <section class="recipe-subgrid-instructions">
-          <h2>Ingridients</h2>
-          <ul>
-            <li class="ingridients">sdfsdf</li>
+          <h2>INGRIDIENTS</h2>
+          <ul class="ingridient_main">
+            <template class="ingridient_list">
+              <li class="ingridients">sdfsdf</li>
+            </template>
           </ul>
         </section>
         <section class="recipe-subgrid-instructions">
-          <h2>Directions</h2>
-          <ol>
-            <li>
-              <input type="checkbox" id="direction" name="direction" />
-              <label for="direction">Direction</label>
-            </li>
-            <li>
-              <input type="checkbox" id="direction" name="direction" />
-              <label for="direction">Direction</label>
-            </li>
-            <li>
-              <input type="checkbox" id="direction" name="direction" />
-              <label for="direction">Direction</label>
-            </li>
-            <li>
-              <input type="checkbox" id="direction" name="direction" />
-              <label for="direction">Direction</label>
-            </li>
-            <li>
-              <input type="checkbox" id="direction" name="direction" />
-              <label for="direction">Direction</label>
-            </li>
+          <h2>DIRECTIONS</h2>
+          <ol class="direction_main">
+            <template class="direction_list">
+              <li>
+                <input type="checkbox" id="direction" name="check" />
+                <label for="direction">Direction</label>
+              </li>
+            </template>
           </ol>
         </section>
       </article>
     </main>
-
     <footer></footer>
     <script src="recipe.js"></script>
     <script src="menu.js"></script>

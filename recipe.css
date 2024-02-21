@@ -40,9 +40,15 @@ figcaption {
   height: 290px;
 }
 /**** DIRECTIONS ****/
-ol,
-li {
+ol{
   margin: 5% 0 5% 0;
+}
+li{
+  font-family: 'Jost';
+  font-size: 1.3rem;
+  color: #214827;
+  line-height: 150%;
+  margin: 3% 0 0 0;
 }
 ul {
   list-style-type: none;
@@ -54,16 +60,24 @@ input[type="checkbox"]:checked + label {
 
 .recipe_container_instructions {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 300px 500px;
+  justify-content: center;
+  gap: 8%;
+  padding: 3% 0 10% 0;
+  background-color: #A7BF95;
 }
-.recipe-subgrid-instructions {
-  display: grid;
-  place-self: start center;
+.grain_bg{
+  background-image: url('./Img/grain.svg');
+  background-size: cover;
 }
 
-h2 {
-  margin-right: 5%;
+ol, ul {
+  margin-left: 8%;
 }
+
+
+
+
 /**** RECIPE-LIST ****/
 
 .recipe-image {
@@ -75,6 +89,10 @@ h2 {
     border-radius: 20px 20px 0 0;
 }
 
+input[type="checkbox"] {
+  transform: scale(2);
+  margin: 0 3% 0 3%;
+}
 
 
 .recipe-view-icon {
@@ -124,3 +142,4 @@ figure {
     place-self: center;
     margin: 0 10% 0 10%;
 }
+

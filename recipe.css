@@ -46,18 +46,20 @@ header{
   top: 30%;
   z-index: 100;
 }
-/**** NAVIGATION ****/
-/*header {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f2f2f2;
-  mix-blend-mode: multiply;
-  font-family: "Jost";
+
+.recipe_text_container{
+  display: grid;
+  grid-column: 1/5;
+  place-self: center;
 }
-.logo img {
-  width: 260px;
-  height: 290px;
+
+.recipe-heroimage{
+  width: 1500px;
+  height: 530px;
+  position: relative;
+  top: -26%;
 }
+
 /**** DIRECTIONS ****/
 ol{
   margin: 5% 0 5% 0;
@@ -101,6 +103,7 @@ ol, ul {
 
 .recipelist-card_container{
   display: grid;
+  filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.25));
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   transition: 0.2s;
@@ -164,14 +167,17 @@ figure {
     justify-content: center;
     align-items: center;
 }
+.list_container{
+  overflow: hidden;
+}
 
 .recipe_list_container{
     display: grid;
     grid-template-columns: repeat(4, 260px);
     filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.25));
     gap: 50px 30px;
-    place-self: center;
-    margin: 0 10% 0 10%;
+    place-self: start center;
+    justify-content: center;
 }
 
 .recipe_footer{
@@ -179,17 +185,33 @@ figure {
   padding-top: 5%;
 }
 
+.recipe-introduction{
+  margin: 0 15% 8% 15%;
+  line-height: 150%;
+  font-size: 1rem;
+}
+
 @media (max-width: 800px) {
 
   .recipe_list_container{
     display: grid;
-    grid-template-columns: repeat(2, 260px);
-    filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.25));
+    grid-template-columns: 1fr 1fr;
     gap: 50px 30px;
     place-self: center;
     justify-content: center;
-    margin: 15% 10% 0 10%;
+    align-items: center;
 }
+
+.recipelist-card_container{
+  display: grid;
+  filter: drop-shadow(0px 0px 26px rgba(0, 0, 0, 0.25));
+  grid-template-columns: 260px;
+  grid-template-rows: 1fr;
+  transition: 0.2s;
+}
+
+
+
 .logo img {
   top: -20%;
   width: 90px;
@@ -198,7 +220,20 @@ figure {
   left: 0%;
   position: relative;
 }
-
+.recipe-heroimage{
+  width: 800px;
+  height: 530px;
+  position: relative;
+  top: -13%;
+}
+.recipe_container_instructions {
+  display: grid;
+  grid-template-columns: 400px;
+  justify-content: center;
+  gap: 5%;
+  padding: 3% 0 3% 0;
+  background-color: #A7BF95;
+}
   
 }
 

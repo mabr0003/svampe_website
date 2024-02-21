@@ -547,6 +547,10 @@ footer .sociale_medier {
   font-family: "jost";
 }
 
+.description {
+  line-height: 25px;
+}
+
 @media (min-width: 800px) {
   /*----- MUSHROOM LIST ------*/
 

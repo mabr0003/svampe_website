@@ -70,9 +70,11 @@ a:hover {
 }
 
 /* Frontpage */
+
+.index {
+  background-color: #a7bf95;
+}
 .frontpage_join {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
   background-color: #a7bf95;
   padding: 5rem;
 }
@@ -118,10 +120,6 @@ label {
   color: #a7bf95;
 }
 
-.frontpage_mushrooms {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-}
 .frontpage_mushrooms img:hover {
   filter: grayscale(1);
   transition: 0.2s;
@@ -143,6 +141,7 @@ label {
   grid-column: 1/5;
   object-fit: cover;
   grid-row: 1/5;
+  height: 400px;
 }
 .div_foraging h2 {
   grid-column: 1/5;
@@ -150,6 +149,7 @@ label {
   grid-row: 3/4;
   z-index: 1000;
   margin: auto;
+  text-align: center;
 }
 
 .div_recipes {
@@ -161,20 +161,18 @@ label {
 }
 .div_recipes img {
   grid-column: 1/5;
-  margin-top: -28rem;
+  height: 400px;
   grid-row: 1/5;
+  object-fit: cover;
 }
 .div_recipes h2 {
   grid-column: 1/5;
-  object-fit: cover;
   grid-row: 3/4;
   z-index: 1000;
   margin: auto;
 }
 
 .frontpage_foraging {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   background-color: #4ebf7f;
   padding: 4rem;
 }
@@ -185,15 +183,16 @@ label {
   margin: auto;
   width: 50%;
   height: auto;
+  display: none;
 }
 
 .frontpage_foraging_link {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
   margin: auto;
   text-align: center;
   grid-row: 2/3;
   gap: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
 }
 .frontpage_foraging_link:hover {
   scale: 1.2;
@@ -216,14 +215,12 @@ label {
 }
 
 .frontpage_follow {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
   overflow: hidden;
 }
 .frontpage_visit {
   display: flex;
   background-color: #a7bf95;
+  padding: 3rem 0;
 }
 .facebook {
   width: 8%;
@@ -255,10 +252,10 @@ label {
   grid-row: 1/6;
 }
 .arrow {
-  grid-column: 2/3;
-  grid-row: 3/4;
+  grid-column: 3/4;
+  grid-row: 4/5;
   width: 25%;
-  margin: auto;
+  rotate: -90deg;
 }
 
 .frontpage_follow_us h2 {
@@ -269,12 +266,48 @@ label {
   justify-content: center;
 }
 
-.video_container {
-  height: 90vh;
-  overflow: hidden;
-}
 video {
   object-fit: cover;
+  width: 100%;
+  max-height: 90vh;
+}
+
+@media (min-width: 800px) {
+  .grid_2-2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid_2-1-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+  }
+
+  .frontpage_foraging img {
+    display: block;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .arrow {
+    display: block;
+    rotate: 0deg;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+  }
+
+  .order {
+    order: -1;
+  }
 }
 /* Mushrooms */
 
@@ -305,6 +338,10 @@ footer .mad {
   padding-left: 5%;
 }
 footer .kontaktform {
+  display: none;
+}
+
+footer .sociale_medier {
   display: none;
 }
 @media (min-width: 800px) {
@@ -389,8 +426,6 @@ footer .kontaktform {
   padding: 2rem;
 }
 #mushrooms_intro img {
-  width: 50%;
-  margin: auto;
   margin-bottom: 2rem;
 }
 
@@ -526,6 +561,11 @@ footer .kontaktform {
   }
   .all_months {
     grid-column: 2/4;
+  }
+
+  #mushrooms_intro img {
+    width: 50%;
+    margin: auto;
   }
   /*----- MUSHROOM SINGLE VIEW -------*/
 

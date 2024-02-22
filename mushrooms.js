@@ -23,4 +23,6 @@ function showMushroom(mushroom) {
   document.querySelector(".landscape_span").textContent = data.landscapes;
   document.querySelector(".colors_span").textContent = data.colors;
   document.querySelector(".month_span").textContent = data.monthtext;
+
+  document.querySelector(".go_to_recipe").href = `recipes.html?id=${data.id}`;
 }

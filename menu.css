@@ -31,7 +31,8 @@ li {
 }
 
 .logo img {
-  height: 80px;
+  width: 155px;
+  height: 125px;
 }
 
 /* nav {
@@ -107,13 +108,14 @@ li {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: #f2f2f2;
     position: absolute;
     top: 60px;
-    left: 0;
+    left: -50px;
     width: 100%;
+    padding-right: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 101;
   }
 
   nav.active .menu li {

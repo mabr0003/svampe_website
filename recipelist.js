@@ -1,5 +1,5 @@
 fetch(
-  "https://akastixcsyqnoitkqodr.supabase.co/rest/v1/mushrooms?select=titlerecipe,time,level,image,id",
+  "https://akastixcsyqnoitkqodr.supabase.co/rest/v1/mushrooms",
   {
     method: "GET",
     headers: {
@@ -20,7 +20,9 @@ function showAllMushrooms(mushroom) {
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
 
-  clone.querySelector(".recipe-image").src = mushroom.image;
+  console.log(mushroom.recipeimg + "test");
+
+  clone.querySelector(".recipe-image").src = mushroom.recipeimg;
   clone.querySelector(".recipe-title").textContent = mushroom.titlerecipe;
   clone.querySelector(".time").textContent = mushroom.time;
   clone.querySelector(".level").textContent = mushroom.level;

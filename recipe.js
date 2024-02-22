@@ -24,6 +24,9 @@ function showMushroom(data) {
   stepsGuide.forEach(makeSteps);
   ingridients.forEach(showIngridient);
 
+  console.log(data.recipeimg + "test");
+
+  document.querySelector(".single-view-recipe-image").src = data[0].recipeimg;
   document.querySelector(".time").textContent = data[0].time;
   document.querySelector(".level").textContent = data[0].level;
   document.querySelector(".person").textContent = data[0].person;
